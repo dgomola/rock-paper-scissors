@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="./rps.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script src="./rps.js"></script>
+    <h1 class="title">Rock Paper Scissors</h1>
+
+    <div class="game">
+        <div class="players">
+            <div class="human">Human: 0</div>
+            <div class="computer">Computer: 0</div>
+        </div>
+
+        <h2 class="message">Who's gonna win today?</h2>
+
+        <div class="selection">
+            <button class="selection-btn" id="rock">✊</button>
+            <button class="selection-btn" id="paper">✋</button>
+            <button class="selection-btn" id="scissors">✌</button>
+        </div>
+
+        <p class="text">Rock, paper or scissors? Choose you move!</p>
+
+        <button class="restart">Play again</button>
+    </div>
+
+    <div class="footer">
+        <p>Made with 💛 by <a href="https://github.com/dgomola" target="_blank" noopener noreferrer>Danijel Gomola</a></p>
+    </div>
 </body>
 </html>

@@ -1,0 +1,127 @@
+html {
+    font-family: "Chewy", system-ui;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+
+.game {
+    background-color: #ff7;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.message {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+.selection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.selection button {
+    padding: 32px;
+    border: 3px solid #333;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 36px;
+}
+
+.selection button:hover {
+    background-color: #333;
+}
+
+.selection button:active {
+    background-color: #fff;
+}
+
+.text {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.restart {
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    width: fit-content;
+    align-self: center;
+}
+
+.restart:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.restart:active {
+    background-color: #fff;
+    color: #333;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer a:hover {
+    text-decoration: underline 3px #ff7;
+}
