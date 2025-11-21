@@ -1,1 +1,2 @@
 # rock-paper-scissors
+This is very popular hand game that you can play in your web browser against computer. [Click here](https://en.wikipedia.org/wiki/Rock_paper_scissors) to see more information about game itself and its rules.
