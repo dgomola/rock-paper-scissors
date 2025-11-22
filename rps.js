@@ -5,19 +5,6 @@ const message = document.querySelector(".message");
 const selectionBtns = document.querySelectorAll(".selection-btn");
 const restartBtn = document.querySelector(".restart");
 
-function getComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3);
-
-    switch (randomNumber) {
-        case 0:
-            return "rock";
-        case 1:
-            return "paper";
-        default:
-            return "scissors";
-    }
-}
-
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
@@ -70,6 +57,19 @@ function playGame() {
         }
     }
 
+    function getComputerChoice() {
+        const randomNumber = Math.floor(Math.random() * 3);
+
+        switch (randomNumber) {
+            case 0:
+                return "rock";
+            case 1:
+                return "paper";
+            default:
+                return "scissors";
+        }
+    }
+
     selectionBtns.forEach((button) => {
         button.addEventListener("click", () => {
             const humanSelection = button.id;
@@ -85,10 +85,10 @@ function playGame() {
             }
         });
     });
-}
 
-restartBtn.addEventListener("click", () => {
-    window.location.reload();
-})
+    restartBtn.addEventListener("click", () => {
+        window.location.reload();
+    });
+}
 
 playGame();
