@@ -60,6 +60,16 @@ function playGame() {
         }
     }
 
+    function showGameWinner() {
+        if (humanScore === 5) {
+            message.textContent = "You won! 🎉";
+        }
+
+        if (computerScore === 5) {
+            message.textContent = "Computer won! 🤖";
+        }
+    }
+
     selectionBtns.forEach((button) => {
         button.addEventListener("click", () => {
             const humanSelection = button.id;
@@ -70,15 +80,8 @@ function playGame() {
             if (humanScore === 5 || computerScore === 5) {
                 selectionBtns.forEach((button) => {
                     button.disabled = true;
+                    setTimeout(showGameWinner, 2000); // Time is measured in milliseconds
                 });
-            }
-
-            if (humanScore === 5) {
-                message.textContent = "You won! 🎉";
-            }
-
-            if (computerScore === 5) {
-                message.textContent = "Computer won! 🤖";
             }
         });
     });
